@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ShowViewDialog">
+		<item value="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>
+		<list key="ShowViewDialog.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.datatools.connectivity"/>
+		</list>
+	</section>
+</section>
