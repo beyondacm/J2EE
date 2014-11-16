@@ -59,6 +59,9 @@ Class.forName("com.mysql.jdbc.Driver");
 String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
 Connection conn = DriverManager.getConnection(url);
 
+Statement stmt = conn.createStatement();
+ResultSet rs = stmt.executeQuery("select * from article");
+
 
       out.write("\r\n");
       out.write("\n");
@@ -70,13 +73,37 @@ Connection conn = DriverManager.getConnection(url);
       out.write("</head>\n");
       out.write("<body>\n");
       out.write("\r\n");
+      out.write("\r\n");
+      out.write("<table border = \"1\">\r\n");
+      out.write("\r\n");
 
+while(rs.next()) {
+
+      out.write("\r\n");
+      out.write("\t<tr>\r\n");
+      out.write("\t\t<td>");
+      out.print( rs.getInt("id") );
+      out.write("</td>\r\n");
+      out.write("\t\t<td>");
+      out.print( rs.getString("cont") );
+      out.write("</td>\r\n");
+      out.write("\t</tr>\r\n");
+ 
+}
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("</table>\n");
+      out.write("</body>\r\n");
+
+rs.close();
+stmt.close();
 conn.close();
 
       out.write("\r\n");
-      out.write("\r\n");
       out.write("\n");
-      out.write("</body>\n");
       out.write("</html>");
     } catch (Throwable t) {
       if (!(t instanceof SkipPageException)){

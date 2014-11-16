@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="67" version="2.0">
+<workbench progressCount="62" version="2.0">
 <workbenchAdvisor/>
 <window height="661" maximized="true" width="1024" x="119" y="64">
 <fastViewData fastViewLocation="1024"/>
@@ -16,11 +16,13 @@
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet3" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet4" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="org.eclipse.wst.ws.explorer.explorer" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -41,13 +43,13 @@
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
 <input connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" path="/MyBBS/SQL/bbs.sql"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="65"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleTree.jsp" partName="ShowArticleTree.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ShowArticleTree.jsp" title="ShowArticleTree.jsp" tooltip="MyBBS/WebContent/ShowArticleTree.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="297"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="381"/>
 </editor>
 </editors>
 <views>
@@ -94,7 +96,7 @@
 <viewState columnWidth0="200" columnWidth1="200" columnWidth2="200"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.ui.browser.editor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="ajcrosscutting"/>
@@ -292,18 +294,51 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" path="/MyBBS/SQL/bbs.sql"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MyBBS/D:\/jdk1.7.0_51\/jre\/lib\/rt.jar&lt;sun.reflect(NativeConstructorAccessorImpl.class"/>
+</editors>
+<item historyLabel="bbs.sql" index="0">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="806" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="325" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="325" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="268" y="0"/>
+</item>
+<item historyLabel="NativeConstructorAccessorImpl.class" index="2">
+<position/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="268" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item historyLabel="ShowArticleTree.jsp" index="1">
+<position info="not_deleted" x="381" y="0"/>
+</item>
+<item active="true" historyLabel="bbs.sql" index="0">
+<position info="not_deleted" x="65" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="topRight"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -311,11 +346,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="NativeConstructorAccessorImpl.class" tooltip="sun.reflect.NativeConstructorAccessorImpl">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=MyBBS/D:\/jdk1.7.0_51\/jre\/lib\/rt.jar&lt;sun.reflect(NativeConstructorAccessorImpl.class"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleTree.jsp" tooltip="MyBBS/WebContent/ShowArticleTree.jsp">
 <persistable path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
 </file>

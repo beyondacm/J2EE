@@ -8,7 +8,7 @@ String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
 Connection conn = DriverManager.getConnection(url);
 
 Statement stmt = conn.createStatement();
-ResultSet rs = stmt.executeQuery("select * from article");
+ResultSet rs = stmt.executeQuery("select * form article");
 
 %>
 
@@ -26,10 +26,7 @@ ResultSet rs = stmt.executeQuery("select * from article");
 <%
 while(rs.next()) {
 %>
-	<tr>
-		<td><%= rs.getInt("id") %></td>
-		<td><%= rs.getString("cont") %></td>
-	</tr>
+
 <% 
 }
 %>
@@ -39,8 +36,6 @@ while(rs.next()) {
 </table>
 </body>
 <%
-rs.close();
-stmt.close();
 conn.close();
 %>
 

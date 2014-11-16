@@ -8,7 +8,7 @@ String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
 Connection conn = DriverManager.getConnection(url);
 
 Statement stmt = conn.createStatement();
-ResultSet rs = stmt.executeQuery("select * from article");
+ResultSet rs = stmt.executeQuery("select * form article");
 
 %>
 
