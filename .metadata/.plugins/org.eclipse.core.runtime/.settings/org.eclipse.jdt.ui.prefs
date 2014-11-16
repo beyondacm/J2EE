@@ -1,9 +1,10 @@
-#Sat Nov 15 09:45:03 CST 2014
+#Sun Nov 16 13:57:26 CST 2014
 useQuickDiffPrefPage=true
 proposalOrderMigrated=true
 tabWidthPropagated=true
 org.eclipse.jdt.ui.javadoclocations.migrated=true
 useAnnotationsPrefPage=true
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
 org.eclipse.jdt.internal.ui.navigator.layout=2
 org.eclipse.jface.textfont=1|Courier New|10.0|0|WINDOWS|1|0|0|0|0|0|0|0|0|1|0|0|0|0|Courier New;
 org.eclipse.jdt.ui.editor.tab.width=

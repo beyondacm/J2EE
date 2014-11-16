@@ -6,8 +6,8 @@
 	</section>
 	<section name="Drivers New Driver_Dialog_Root">
 		<item value="598" key="Dialog_Size_Height"/>
-		<item value="325" key="Dialog_Size_Width"/>
 		<item value="true" key="Edit Immediately"/>
+		<item value="325" key="Dialog_Size_Width"/>
 	</section>
 	<section name="Drivers Definitions Driver_Dialog_Root">
 		<item value="557" key="Dialog_Size_Height"/>
