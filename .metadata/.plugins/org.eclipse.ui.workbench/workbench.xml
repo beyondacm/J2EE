@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workbench progressCount="62" version="2.0">
 <workbenchAdvisor/>
-<window height="661" maximized="true" width="1024" x="119" y="64">
+<window height="661" maximized="true" width="1024" x="54" y="-8">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -43,13 +43,13 @@
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
 <input connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" path="/MyBBS/SQL/bbs.sql"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="65"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleTree.jsp" partName="ShowArticleTree.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ShowArticleTree.jsp" title="ShowArticleTree.jsp" tooltip="MyBBS/WebContent/ShowArticleTree.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="381"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1123"/>
 </editor>
 </editors>
 <views>
@@ -96,7 +96,7 @@
 <viewState columnWidth0="200" columnWidth1="200" columnWidth2="200"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.browser.editor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="ajcrosscutting"/>
@@ -257,7 +257,7 @@
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.18450184" ratioLeft="250" ratioRight="1105" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.68488747" ratioLeft="426" ratioRight="196" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.wst.server.ui.ServersView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
@@ -294,46 +294,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" path="/MyBBS/SQL/bbs.sql"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
-<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=MyBBS/D:\/jdk1.7.0_51\/jre\/lib\/rt.jar&lt;sun.reflect(NativeConstructorAccessorImpl.class"/>
-</editors>
-<item historyLabel="bbs.sql" index="0">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="806" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="325" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="325" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="NativeConstructorAccessorImpl.class" index="2">
-<position/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="268" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="381" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="381" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="1">
-<position info="not_deleted" x="381" y="0"/>
-</item>
-<item active="true" historyLabel="bbs.sql" index="0">
-<position info="not_deleted" x="65" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
