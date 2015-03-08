@@ -3,21 +3,26 @@
 <%@ page import = "java.sql.*" %>
 
 <%!
+//功能：做一个展现
 String str = "";
+//从数据库里取所以参数要用conn传进来
 private void tree(Connection conn,int id,int level) {
 	Statement stmt = null;
 	ResultSet rs = null;
+	//定义前导字符串
 	String preStr = "";
 	for(int i=0; i<level; i++) {
 		preStr += "----";
 	}
 	try {
 		stmt = conn.createStatement();
+		//要执行的sql语句
 		String sql = "select * from article where pid = "+id;
 		rs = stmt.executeQuery(sql);
 		while(rs.next()) {
 			str += "<tr><td>" + rs.getInt("id") + "</td><td>" +
-		    preStr + rs.getString("title") + "</td><tr>";
+		    preStr + "<a href='ShowArticleDetail.jsp? id="+rs.getInt("id")+ "'>" + rs.getString("title") + "</a>" +
+		    "</td><tr>";
 			if(rs.getInt("isleaf") != 0) {
 				tree(conn, rs.getInt("id"), level+1);
 			}
@@ -46,15 +51,23 @@ private void tree(Connection conn,int id,int level) {
 
 
 <%
+//连接上JDBC
 Class.forName("com.mysql.jdbc.Driver");
+//连接串
 String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
+//拿到一个connection
 Connection conn = DriverManager.getConnection(url);
 
 Statement stmt = conn.createStatement();
 ResultSet rs = stmt.executeQuery("select * from article where pid = 0");
+
+
 while(rs.next()) {
-	str += str += "<tr><td>" + rs.getInt("id") + "</td><td>" +
-    rs.getString("title") + "</td><tr>";
+	//主题贴
+	str = "<tr><td>" + rs.getInt("id") + "</td><td>" +
+    	   "<a href='ShowArticleDetail.jsp?id=" + rs.getInt("id") + "'>" + rs.getString("title") + "</a>" +
+    	   "</td><tr>";
+    
     if(rs.getInt("id") != 0) {
     	tree(conn,rs.getInt("id"), 1);
     }
@@ -74,7 +87,9 @@ conn.close();
 <body>
 <table border = "1">
 
+<!-- table自己写， tr, td写在str中 -->
 <%= str %>
+
 </table>
 </body>
 </html>

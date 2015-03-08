@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=gbk"
+    pageEncoding="gbk"%>
+<%@ page import = "java.sql.*"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+
+<!-- 连接上数据库操作 -->
+<%
+Class.forName("com.mysql.jdbc.Driver");
+//连接串
+String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
+//拿到一个connection
+Connection conn = DriverManager.getConnection(url);
+
+Statement stmt = conn.createStatement();
+ResultSet rs = stmt.executeQuery("select * from article where pid = 0");
+
+while(rs.next()) {
+	//主题贴
+	str = "<tr><td>" + rs.getInt("id") + "</td><td>" +
+    	   "<a href='ShowAritcleDetail.jsp?id=" + rs.getInt("id") + "'>" + rs.getString("title") + "</a>" +
+    	   "</td><tr>";
+    
+    if(rs.getInt("id") != 0) {
+    	tree(conn,rs.getInt("id"), 1);
+    }
+    
+}
+rs.close();
+stmt.close();
+conn.close();
+%>
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+</body>
+</html>
