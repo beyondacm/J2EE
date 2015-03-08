@@ -10,6 +10,7 @@
 String str_id = request.getParameter("id");
 int id = Integer.parseInt(str_id);
 
+
 Class.forName("com.mysql.jdbc.Driver");
 //Á¬½Ó´®
 String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
@@ -50,6 +51,9 @@ if(rs.next()) {
 		</tr>
 		
 	</table>
+<a href = "Reply.jsp?id=<%=rs.getInt("id")%>&rootid=<%= rs.getInt("rootid")%>">
+»Ø¸´
+</a>
 
 <%
 }

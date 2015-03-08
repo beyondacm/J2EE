@@ -62,6 +62,7 @@ public final class ShowArticleDetail_jsp extends org.apache.jasper.runtime.HttpJ
 String str_id = request.getParameter("id");
 int id = Integer.parseInt(str_id);
 
+
 Class.forName("com.mysql.jdbc.Driver");
 //连接串
 String url = "jdbc:mysql://localhost/bbs?user=root&password=root";
@@ -110,6 +111,13 @@ if(rs.next()) {
       out.write("\t\t</tr>\r\n");
       out.write("\t\t\r\n");
       out.write("\t</table>\r\n");
+      out.write("<a href = \"Reply.jsp?id=");
+      out.print(rs.getInt("id"));
+      out.write("&rootid=");
+      out.print( rs.getInt("rootid"));
+      out.write("\">\r\n");
+      out.write("回复\r\n");
+      out.write("</a>\r\n");
       out.write("\r\n");
 
 }
