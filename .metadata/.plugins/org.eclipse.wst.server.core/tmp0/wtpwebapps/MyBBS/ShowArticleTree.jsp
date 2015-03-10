@@ -88,8 +88,10 @@ conn.close();
 <title>Insert title here</title>
 </head>
 <body>
-<table border = "1">
 
+<a href="Post.jsp">发表新帖</a>
+
+<table border = "1">
 <!-- table自己写， tr, td写在str中 -->
 <%= str %>
 <%str = "";%>
