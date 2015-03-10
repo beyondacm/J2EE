@@ -28,7 +28,8 @@ private void tree(Connection conn,int id,int level) {
 		while(rs.next()) {
 			str += "<tr><td>" +rs.getInt("id")+ "</td><td>" +
 		    preStr + "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a>" +
-		    "</td><tr>";
+		    "</td><td>" + "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") +"'>删除</a>"+ "</td>" +
+		    "<tr>";
 			if(rs.getInt("isleaf") != 0) {
 				tree(conn, rs.getInt("id"), level+1);
 			}
@@ -119,7 +120,9 @@ while(rs.next()) {
 	//主题贴
 	str += "<tr><td>" + rs.getInt("id") + "</td><td>" +
     	   "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a>" +
-    	   "</td><tr>";
+    	   "</td><td>"+
+    	   "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") + "'>删除</a>"+ "</td>" +
+    	   "<tr>";
     
     if(rs.getInt("id") != 0) {
     	tree(conn,rs.getInt("id"), 1);
