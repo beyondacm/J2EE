@@ -97,7 +97,7 @@ if(action != null && action.equals("post")) {
 //	pstmt.close();
 	conn.close();
 	
-	response.sendRedirect("ShowArticleTree.jsp");
+	response.sendRedirect("ShowArticleFlat.jsp");
 }
 
       out.write("\r\n");

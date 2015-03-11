@@ -11,8 +11,11 @@ public final class ShowArticleTree_jsp extends org.apache.jasper.runtime.HttpJsp
 
 //功能：做一个展现
 String str = "";
+//login定义为成员变量
+boolean login = false;
 //从数据库里取所以参数要用conn传进来
 private void tree(Connection conn,int id,int level) {
+	
 	Statement stmt = null;
 	ResultSet rs = null;
 	//定义前导字符串
@@ -25,10 +28,15 @@ private void tree(Connection conn,int id,int level) {
 		//要执行的sql语句
 		String sql = "select * from article where pid = "+id;
 		rs = stmt.executeQuery(sql);
+		String strLogin = "";
+		
 		while(rs.next()) {
+			if(login) {
+				strLogin = "<td>" + "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") +"'>删除</a>"+ "</td>";
+			}
 			str += "<tr><td>" +rs.getInt("id")+ "</td><td>" +
-		    preStr + "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a>" +
-		    "</td><td>" + "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") +"'>删除</a>"+ "</td>" +
+		    preStr + "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a></td>" +
+		     strLogin +
 		    "<tr>";
 			if(rs.getInt("isleaf") != 0) {
 				tree(conn, rs.getInt("id"), level+1);
@@ -100,6 +108,16 @@ private void tree(Connection conn,int id,int level) {
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
+
+//去session里面拿东西
+String admin = (String)session.getAttribute("admin");
+if(admin != null && admin.equals("true")) {
+	login = true;
+}
+
+      out.write("\r\n");
+      out.write("\r\n");
+      out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
       out.write("\r\n");
@@ -115,13 +133,15 @@ Connection conn = DriverManager.getConnection(url);
 Statement stmt = conn.createStatement();
 ResultSet rs = stmt.executeQuery("select * from article where pid = 0");
 
-
+String strLogin = "";
 while(rs.next()) {
 	//主题贴
+	if(login) {
+		strLogin = "<td>" + "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") +"'>删除</a>"+ "</td>";
+	}
 	str += "<tr><td>" + rs.getInt("id") + "</td><td>" +
-    	   "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a>" +
-    	   "</td><td>"+
-    	   "<a href='Delete.jsp?id=" +rs.getInt("id")+ "&pid=" + rs.getInt("pid") + "'>删除</a>"+ "</td>" +
+    	   "<a href='ShowArticleDetail.jsp?id=" +rs.getInt("id")+ "'>" + rs.getString("title") + "</a></td>" +
+    	   strLogin +
     	   "<tr>";
     
     if(rs.getInt("id") != 0) {
@@ -144,7 +164,7 @@ conn.close();
       out.write("<body>\r\n");
       out.write("\r\n");
       out.write("<a href=\"Post.jsp\">发表新帖</a>\r\n");
-      out.write("\r\n");
+      out.write("<a href=\"Login.jsp\">管理员登陆</a>\r\n");
       out.write("<table border = \"1\">\r\n");
       out.write("<!-- table自己写， tr, td写在str中 -->\r\n");
       out.print( str );

@@ -2,6 +2,8 @@
     pageEncoding="GBK"%>
 <%@ page import ="java.sql.*" %>
 
+
+
 <%! 
 //µÝ¹éÉ¾³ý
 private void del(Connection conn, int id) {
@@ -36,7 +38,13 @@ private void del(Connection conn, int id) {
 }
 %>
 
-
+<%
+String admin = (String)session.getAttribute("admin");
+if(admin == null || !admin.equals("true")) {
+	out.println("You dont have the access level!!! Please login");
+	return ;
+}
+%>
 
 <%
 //Ê¹ÍøÒ³ÏÔÊ¾ÖÐÎÄ

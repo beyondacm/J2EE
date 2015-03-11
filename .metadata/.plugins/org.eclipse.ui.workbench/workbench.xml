@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="62" version="2.0">
+<workbench progressCount="61" version="2.0">
 <workbenchAdvisor/>
-<window height="682" maximized="true" width="1015" x="208" y="191">
+<window height="681" maximized="true" width="902" x="376" y="28">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
@@ -22,6 +22,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="198" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="115" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -45,37 +46,53 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" name="bbs.sql" partName="bbs.sql" path="F:/GitHub/J2EE/MyBBS/SQL/bbs.sql" title="bbs.sql" tooltip="MyBBS/SQL/bbs.sql" workbook="DefaultEditorWorkbook">
 <input connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" path="/MyBBS/SQL/bbs.sql"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="69"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="326"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleTree.jsp" partName="ShowArticleTree.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ShowArticleTree.jsp" title="ShowArticleTree.jsp" tooltip="MyBBS/WebContent/ShowArticleTree.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="140"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="125"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleDetail.jsp" partName="ShowArticleDetail.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ShowArticleDetail.jsp" title="ShowArticleDetail.jsp" tooltip="MyBBS/WebContent/ShowArticleDetail.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ShowArticleDetail.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="334"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="Reply.jsp" partName="Reply.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/Reply.jsp" title="Reply.jsp" tooltip="MyBBS/WebContent/Reply.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/Reply.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="330"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="296"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ReplyOK.jsp" partName="ReplyOK.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ReplyOK.jsp" title="ReplyOK.jsp" tooltip="MyBBS/WebContent/ReplyOK.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ReplyOK.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="462"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="380"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="Post.jsp" partName="Post.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/Post.jsp" title="Post.jsp" tooltip="MyBBS/WebContent/Post.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/Post.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1326"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="Login.jsp" partName="Login.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/Login.jsp" title="Login.jsp" tooltip="MyBBS/WebContent/Login.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/Login.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="484"/>
 </editor>
 <editor id="org.eclipse.jst.jsp.core.jspsource.source" name="Delete.jsp" partName="Delete.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/Delete.jsp" title="Delete.jsp" tooltip="MyBBS/WebContent/Delete.jsp" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/Delete.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1989"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1878"/>
 </editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="showresult.jsp" partName="showresult.jsp" path="C:/Users/lenovo/Desktop/ajax/WebContent/showresult.jsp" title="showresult.jsp" tooltip="ajax/WebContent/showresult.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/ajax/WebContent/showresult.jsp"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
+<editor id="org.eclipse.wst.html.core.htmlsource.source" name="BBSlogin.html" partName="BBSlogin.html" path="F:/GitHub/J2EE/MyBBS/WebContent/BBSlogin.html" title="BBSlogin.html" tooltip="MyBBS/WebContent/BBSlogin.html" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/BBSlogin.html"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="348"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleFlat.jsp" partName="ShowArticleFlat.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/ShowArticleFlat.jsp" title="ShowArticleFlat.jsp" tooltip="MyBBS/WebContent/ShowArticleFlat.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/ShowArticleFlat.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1779"/>
+</editor>
+<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="Reply.jsp" partName="Reply.jsp" path="F:/GitHub/J2EE/MyBBS/WebContent/Reply.jsp" title="Reply.jsp" tooltip="MyBBS/WebContent/Reply.jsp" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/MyBBS/WebContent/Reply.jsp"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="1417"/>
 </editor>
 </editors>
 <views>
@@ -121,7 +138,7 @@
 <viewState columnWidth0="274" columnWidth1="200" columnWidth2="200"/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
+<perspectives activePart="org.eclipse.ui.browser.editor" activePerspective="org.eclipse.jst.j2ee.J2EEPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.ui.internal.ide.application.ResourcePerspective" id="org.eclipse.ui.resourcePerspective" label="Resource"/>
 <alwaysOnActionSet id="ajcrosscutting"/>
@@ -279,8 +296,8 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.15498155" ratioLeft="210" ratioRight="1145" relationship="2" relative="topLeft"/>
-<info folder="true" part="bottomRight" ratio="0.79581994" ratioLeft="495" ratioRight="127" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" appearance="2" expanded="2">
+<info folder="true" part="bottomRight" ratio="0.75562704" ratioLeft="470" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
@@ -314,84 +331,12 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" path="/MyBBS/SQL/bbs.sql"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ajax/WebContent/showresult.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/ajax/WebContent/index.jsp"/>
-<editor connInfoName="Undefined:::" editorInputType="SQLScrapbookEditorInput" factoryID="org.eclipse.datatools.sqltools.internal.sqlscrapbook.editor.SQLScrapbookEditorInputFactory" id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" path="/MyBBS/SQL/bbs.sql"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/ShowArticleTree.jsp"/>
-<editor factoryID="org.eclipse.wst.server.ui.editor.input.factory" id="org.eclipse.wst.server.ui.editor" server-id="14-11-16_下午1_390"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/ReplyOK.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/Reply.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" path="/MyBBS/WebContent/Delete.jsp"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Servers/Tomcat v6.0 Server at localhost-config/server.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Servers/Tomcat v6.0 Server at localhost-config/tomcat-users.xml"/>
-</editors>
-<item historyLabel="bbs.sql" index="0">
-<position info="not_deleted" x="179" y="0"/>
-</item>
-<item historyLabel="showresult.jsp" index="1">
-<position/>
-</item>
-<item historyLabel="index.jsp" index="2">
-<position/>
-</item>
-<item historyLabel="showresult.jsp" index="1">
-<position info="not_deleted" x="629" y="0"/>
-</item>
-<item historyLabel="bbs.sql" index="3">
-<position/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="4">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="Tomcat v6.0 Server at localhost" index="5"/>
-<item historyLabel="ReplyOK.jsp" index="6">
-<position info="not_deleted" x="126" y="0"/>
-</item>
-<item historyLabel="Tomcat v6.0 Server at localhost" index="5"/>
-<item historyLabel="ReplyOK.jsp" index="6">
-<position info="not_deleted" x="126" y="0"/>
-</item>
-<item historyLabel="Reply.jsp" index="7">
-<position info="not_deleted" x="330" y="0"/>
-</item>
-<item historyLabel="ShowArticleTree.jsp" index="4">
-<position info="not_deleted" x="140" y="0"/>
-</item>
-<item historyLabel="showresult.jsp" index="1">
-<position/>
-</item>
-<item historyLabel="showresult.jsp" index="1">
-<position/>
-</item>
-<item historyLabel="Delete.jsp" index="8">
-<position/>
-</item>
-<item historyLabel="ReplyOK.jsp" index="6">
-<position info="not_deleted" x="462" y="0"/>
-</item>
-<item historyLabel="bbs.sql" index="3">
-<position info="not_deleted" x="283" y="0"/>
-</item>
-<item historyLabel="server.xml" index="9"/>
-<item historyLabel="bbs.sql" index="3">
-<position info="not_deleted" x="283" y="0"/>
-</item>
-<item historyLabel="tomcat-users.xml" index="10"/>
-<item active="true" historyLabel="bbs.sql" index="3">
-<position info="not_deleted" x="283" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -399,40 +344,15 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="topLeft"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.wst.server.ui.editor.input.factory" id="org.eclipse.wst.server.ui.editor" name="Tomcat v6.0 Server at localhost" tooltip="Tomcat v6.0 Server at localhost">
-<persistable server-id="14-11-16_下午1_390"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="tomcat-users.xml" tooltip="Servers/Tomcat v6.0 Server at localhost-config/tomcat-users.xml">
-<persistable path="/Servers/Tomcat v6.0 Server at localhost-config/tomcat-users.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="server.xml" tooltip="Servers/Tomcat v6.0 Server at localhost-config/server.xml">
-<persistable path="/Servers/Tomcat v6.0 Server at localhost-config/server.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="index.jsp" tooltip="ajax/WebContent/index.jsp">
-<persistable path="/ajax/WebContent/index.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="showresult.jsp" tooltip="ajax/WebContent/showresult.jsp">
-<persistable path="/ajax/WebContent/showresult.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="Delete.jsp" tooltip="MyBBS/WebContent/Delete.jsp">
-<persistable path="/MyBBS/WebContent/Delete.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="Delete.jsp" tooltip="MyBBS/WebContent/WEB-INF/Delete.jsp">
-<persistable path="/MyBBS/WebContent/WEB-INF/Delete.jsp"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="ReplyOK.jsp" tooltip="MyBBS/WebContent/ReplyOK.jsp">
-<persistable path="/MyBBS/WebContent/ReplyOK.jsp"/>
-</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="Reply.jsp" tooltip="MyBBS/WebContent/Reply.jsp">
 <persistable path="/MyBBS/WebContent/Reply.jsp"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleDetail.jsp" tooltip="MyBBS/WebContent/ShowArticleDetail.jsp">
-<persistable path="/MyBBS/WebContent/ShowArticleDetail.jsp"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jst.jsp.core.jspsource.source" name="ShowArticleFlat.jsp" tooltip="MyBBS/WebContent/ShowArticleFlat.jsp">
+<persistable path="/MyBBS/WebContent/ShowArticleFlat.jsp"/>
 </file>
 </mruList>
 </workbench>

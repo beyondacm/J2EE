@@ -92,6 +92,15 @@ private void del(Connection conn, int id) {
       out.write("\r\n");
       out.write("\r\n");
 
+String admin = (String)session.getAttribute("admin");
+if(admin == null || !admin.equals("true")) {
+	out.println("You dont have the access level!!! Please login");
+	return ;
+}
+
+      out.write("\r\n");
+      out.write("\r\n");
+
 //使网页显示中文
 request.setCharacterEncoding("gbk");
 //把id传进来
