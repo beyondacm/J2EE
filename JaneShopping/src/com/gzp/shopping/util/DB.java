@@ -19,8 +19,9 @@ public class DB {
 	//创建一个与数据库的连接
 	public static Connection getConn() {
 		Connection conn = null;
+		//注意此处要修改数据库名
 		try {
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/mydata?user=root&password=root");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/shopping?user=root&password=root");
 		} catch (SQLException e) {
 					e.printStackTrace();
 		}

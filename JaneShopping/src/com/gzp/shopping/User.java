@@ -1,6 +1,13 @@
 package com.gzp.shopping;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Timestamp;
 import java.util.Date;
+
+import com.gzp.shopping.util.DB;
 
 //javaBean与数据库中表的字段是一一对应的
 //沿用javaBean的标准来写
@@ -13,7 +20,7 @@ public class User {
 	private String password;
 	private String phone;
 	private String addr;
-	private Date rdate;
+	private Timestamp rdate;
 	public int getId() {
 		return id;
 	}
@@ -47,9 +54,31 @@ public class User {
 	public Date getRdate() {
 		return rdate;
 	}
-	public void setRdate(Date rdate) {
+	public void setRdate(Timestamp rdate) {
 		this.rdate = rdate;
 	}
 	
+	public void save() {
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		try{
+			
+			conn = DB.getConn();
+			String sql = "insert into ruser values(null,?,?,?,?,?)";
+			pstmt = DB.getPStmt(conn, sql);
+			pstmt.setString(1, username);
+			pstmt.setString(2, password);
+			pstmt.setString(3, phone);
+			pstmt.setString(4, addr);
+			pstmt.setTimestamp(5, rdate);
+			pstmt.executeUpdate();
+			
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DB.closeConn(conn);
+			DB.closeStmt(pstmt);
+		}
+	}
 	
 }
