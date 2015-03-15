@@ -8,18 +8,24 @@ request.setCharacterEncoding("GB18030");
 String action = request.getParameter("action");
 if(action != null && action.trim().equals("register")) {
 	String username = request.getParameter("username");
+	//在服务器端进行检查
+	//TODO make sure username is valid
 	String password = request.getParameter("password");
+	String password2 = request.getParameter("password2");
+	//TODO make suer password = passwod2
+	
 	String phone = request.getParameter("phone");
 	String addr = request.getParameter("addr");
-//差一个addr	
-	User u = new User();
-	u.setUsername(username);
-	u.setPassword(password);
-	u.setPhone(phone);
-	u.setAddr(addr);
-	u.setRdate(new Timestamp(System.currentTimeMillis()));
+
+	User u = new User(username, password, phone, addr);
+//	u.setUsername(username);
+//	u.setPassword(password);
+//	u.setPhone(phone);
+//	u.setAddr(addr);
+//	u.setRdate(new Timestamp(System.currentTimeMillis()));
 	u.save();
 	out.println("Congratulations!Register OK!");
+	return;
 }
 %>
 
@@ -144,6 +150,7 @@ if(action != null && action.trim().equals("register")) {
 	<div class="container">
     <form class="form-signin" role="form" name="form" action="register.jsp" method="post"
     onsubmit="return checkdata()">
+    	<!-- 隐含字段判断是提交过来的还是直接访问的 -->
     	<input type="hidden" name="action" value="register">
         <h2 class="form-signin-heading">
             	立即加入!

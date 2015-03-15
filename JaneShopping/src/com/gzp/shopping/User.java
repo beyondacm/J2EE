@@ -2,10 +2,13 @@ package com.gzp.shopping;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.sql.Timestamp;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 import com.gzp.shopping.util.DB;
 
@@ -21,6 +24,7 @@ public class User {
 	private String phone;
 	private String addr;
 	private Timestamp rdate;
+	
 	public int getId() {
 		return id;
 	}
@@ -58,6 +62,24 @@ public class User {
 		this.rdate = rdate;
 	}
 	
+	public User() {}
+	
+	public User(String username, String password, String phone, String addr, Timestamp rdate) {
+		this.username = username;
+		this.password = password;
+		this.phone = phone;
+		this.addr = addr;
+		this.rdate = rdate;
+	}
+	
+	public User(String username, String password, String phone, String addr) {
+		this.username = username;
+		this.password = password;
+		this.phone = phone;
+		this.addr = addr;
+		this.rdate = new Timestamp(System.currentTimeMillis());
+	}
+	
 	public void save() {
 		Connection conn = null;
 		PreparedStatement pstmt = null;
@@ -76,9 +98,10 @@ public class User {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		} finally {
-			DB.closeConn(conn);
 			DB.closeStmt(pstmt);
+			DB.closeConn(conn);
 		}
 	}
 	
+
 }

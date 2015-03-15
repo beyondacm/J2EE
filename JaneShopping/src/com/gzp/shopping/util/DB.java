@@ -2,6 +2,8 @@ package com.gzp.shopping.util;
 
 import java.sql.*;
 
+import com.sun.corba.se.spi.orbutil.fsm.Guard.Result;
+
 //管理和数据库的连接
 public class DB {
 	private static DB db;
@@ -88,7 +90,7 @@ public class DB {
 	public static void closeResultSet(ResultSet rs) {
 		try {
 			if(rs != null) {
-				rs.close();
+				rs.close(); 
 				rs = null;
 			}
 		} catch (SQLException e) {
@@ -96,6 +98,14 @@ public class DB {
 		}
 	}
 	
-	
+	public static ResultSet executeQuery(Connection conn, String sql) {
+		ResultSet rs = null ;
+		try {
+			rs = conn.createStatement().executeQuery(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return rs;
+	}
 	
 }
