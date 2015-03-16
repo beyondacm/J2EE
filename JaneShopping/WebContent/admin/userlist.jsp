@@ -4,6 +4,10 @@
 <%@ page import = "com.gzp.shopping.*"%>
 <%@ page import = "java.util.*"%>
 
+
+<%@ include file = "_sessioncheck.jsp" %>
+
+
 <%
 //get all users
 List<User> users = UserManager.getUsers();
@@ -28,6 +32,7 @@ List<User> users = UserManager.getUsers();
 			<td>电话</td>
 			<td>地址</td>
 			<td>注册时间</td>
+			<td>处理</td>
 		</tr>
 		<%
 		for(Iterator<User> it = users.iterator(); it.hasNext(); ) {
@@ -39,6 +44,9 @@ List<User> users = UserManager.getUsers();
 			<td><%= u.getPhone() %></td>
 			<td><%= u.getAddr() %></td>
 			<td><%= u.getRdate() %></td>
+			<td>
+				<a href= "userdelete.jsp?id=<%=u.getId()%>"  target="detail">删</a>
+			</td>
 		</tr>
 		
 		<%

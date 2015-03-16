@@ -3,6 +3,7 @@ package com.gzp.shopping;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,5 +38,21 @@ public class UserManager {
 			DB.closeResultSet(rs);
 		}
 		return list;
+	}
+	
+	
+	public static void deleteUser(int id) {
+		Connection conn = null;
+		Statement stmt = null;
+		try {
+			conn = DB.getConn();
+			stmt = DB.getStmt(conn);
+			stmt.executeUpdate("delete from ruser where id = "+id);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} finally {
+			DB.closeStmt(stmt);
+			DB.closeConn(conn);
+		}
 	}
 }
