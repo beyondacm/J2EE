@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="MyBBS" path="/MyBBS" reloadable="true" source="org.eclipse.jst.jee.server:MyBBS"/></Host>
+      <Context docBase="MyBBS" path="/MyBBS" reloadable="true" source="org.eclipse.jst.jee.server:MyBBS"/><Context docBase="WeChatTest" path="/WeChatTest" reloadable="true" source="org.eclipse.jst.jee.server:WeChatTest"/></Host>
     </Engine>
   </Service>
 </Server>

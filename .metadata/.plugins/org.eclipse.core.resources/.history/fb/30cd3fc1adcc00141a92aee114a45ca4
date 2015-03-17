@@ -1,0 +1,17 @@
+package org.liufeng.course.message.resp;
+
+import org.liufeng.course.message.req.BaseMessage;
+import org.liufeng.course.message.req.Video;
+
+public class VideoMessage extends BaseMessage {
+	private Video Video;
+
+	public Video getVideo() {
+		return Video;
+	}
+
+	public void setVideo(Video video) {
+		Video = video;
+	}
+	 
+}
