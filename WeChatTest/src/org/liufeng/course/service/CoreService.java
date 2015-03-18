@@ -1,6 +1,7 @@
 package org.liufeng.course.service;  
   
 import java.util.Date;  
+import java.util.HashMap;
 import java.util.Map;  
 import javax.servlet.http.HttpServletRequest;  
 import org.liufeng.course.message.resp.TextMessage;  
@@ -26,7 +27,7 @@ public class CoreService {
             String respContent = "请求处理异常，请稍候尝试！";  
   
             // xml请求解析  
-            Map<String, String> requestMap = MessageUtil.parseXml(request);  
+            HashMap<String, String> requestMap = MessageUtil.parseXml(request);  
   
             // 发送方帐号（open_id）  
             String fromUserName = requestMap.get("FromUserName");  
@@ -34,15 +35,16 @@ public class CoreService {
             String toUserName = requestMap.get("ToUserName");  
             // 消息类型  
             String msgType = requestMap.get("MsgType");  
-  
-            // 回复文本消息  
+            
+            //判断用户发的是哪一种类型的消息
+            
+            // 假设：统一回复文本消息  
             TextMessage textMessage = new TextMessage();  
             textMessage.setToUserName(fromUserName);  
             textMessage.setFromUserName(toUserName);  
             textMessage.setCreateTime(new Date().getTime());  
             textMessage.setMsgType(MessageUtil.RESP_MESSAGE_TYPE_TEXT);  
-            textMessage.setFuncFlag(0);  
-  
+
             // 文本消息  
             if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_TEXT)) {  
                 respContent = "您发送的是文本消息！";  
@@ -63,11 +65,15 @@ public class CoreService {
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VOICE)) {  
                 respContent = "您发送的是音频消息！";  
             }  
+            // 视频消息  
+            else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_VIDEO)) {  
+                respContent = "您发送的是音频消息！";  
+            } 
             // 事件推送  
             else if (msgType.equals(MessageUtil.REQ_MESSAGE_TYPE_EVENT)) {  
                 // 事件类型  
                 String eventType = requestMap.get("Event");  
-                // 订阅  
+                // 订阅事件  
                 if (eventType.equals(MessageUtil.EVENT_TYPE_SUBSCRIBE)) {  
                     respContent = "谢谢您的关注！";  
                 }  

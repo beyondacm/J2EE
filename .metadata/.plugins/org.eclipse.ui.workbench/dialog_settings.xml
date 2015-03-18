@@ -4,9 +4,9 @@
 		<item value="2" key="DIALOG_Y_ORIGIN"/>
 		<item value="-23" key="DIALOG_X_ORIGIN"/>
 	</section>
-	<section name="ZipFileImportWizard">
-	</section>
 	<section name="NewWizardAction">
+	</section>
+	<section name="ZipFileImportWizard">
 	</section>
 	<section name="ShowViewDialog">
 		<item value="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" key="ShowViewDialog.STORE_SELECTED_VIEW_ID"/>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.liufeng.course.message.req.BaseMessage"/>
+<fullyQualifiedTypeName name="org.dom4j.Element"/>
+<fullyQualifiedTypeName name="org.liufeng.course.message.resp.TextMessage"/>
+<fullyQualifiedTypeName name="org.liufeng.course.message.req.ImageMessage"/>
+<fullyQualifiedTypeName name="org.liufeng.course.message.resp.VideoMessage"/>
+<fullyQualifiedTypeName name="org.liufeng.course.message.resp.VoiceMessage"/>
+<fullyQualifiedTypeName name="org.liufeng.course.service.CoreService"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
 </qualifiedTypeNameHistroy>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="67" version="2.0">
+<workbench progressCount="49" version="2.0">
 <workbenchAdvisor/>
-<window height="726" width="921" x="289" y="105">
+<window height="642" maximized="true" width="1080" x="522" y="13">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="160"/>
 </perspectiveBar>
 <coolbarLayout locked="0">
 <coolItem id="group.file" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="193" y="22"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="101" y="22"/>
 <coolItem id="additions" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="135" y="22"/>
 <coolItem id="org.eclipse.jst.j2ee.J2eeMainActionSet" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -24,10 +24,10 @@
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.html.core.htmlsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="115" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="115" y="22"/>
 <coolItem id="org.eclipse.wst.server.ui.editor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.ui.browser.editor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.datatools.sqltools.data.internal.ui.editor.tableDataEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.datatools.sqltools.sqlscrapbook.SQLScrapbookEditor" itemType="typePlaceholder" x="-1" y="-1"/>
@@ -44,34 +44,25 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
-<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" partName="web.xml" path="F:/GitHub/J2EE/WeChatTest/WebContent/WEB-INF/web.xml" title="web.xml" tooltip="WeChatTest/WebContent/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/WebContent/WEB-INF/web.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Article.java" partName="Article.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/resp/Article.java" title="Article.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/Article.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/resp/Article.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoreService.java" partName="CoreService.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/service/CoreService.java" title="CoreService.java" tooltip="WeChatTest/src/org/liufeng/course/service/CoreService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/service/CoreService.java"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NewsMessage.java" partName="NewsMessage.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/resp/NewsMessage.java" title="NewsMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/NewsMessage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/resp/NewsMessage.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextMessage.java" partName="TextMessage.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/resp/TextMessage.java" title="TextMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/TextMessage.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/resp/TextMessage.java"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VideoMessage.java" partName="VideoMessage.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/resp/VideoMessage.java" title="VideoMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/VideoMessage.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/resp/VideoMessage.java"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextMessage.java" partName="TextMessage.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/req/TextMessage.java" title="TextMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/TextMessage.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/req/TextMessage.java"/>
 <editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Video.java" partName="Video.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/message/resp/Video.java" title="Video.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/Video.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/message/resp/Video.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageUtil.java" partName="MessageUtil.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/util/MessageUtil.java" title="MessageUtil.java" tooltip="WeChatTest/src/org/liufeng/course/util/MessageUtil.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/util/MessageUtil.java"/>
-<editorState selectionHPixel="0" selectionLength="0" selectionOffset="2750"/>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SignUtil.java" partName="SignUtil.java" path="F:/GitHub/J2EE/WeChatTest/src/org/liufeng/course/util/SignUtil.java" title="SignUtil.java" tooltip="WeChatTest/src/org/liufeng/course/util/SignUtil.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WeChatTest/src/org/liufeng/course/util/SignUtil.java"/>
+<editorState selectionHPixel="0" selectionLength="0" selectionOffset="213"/>
 </editor>
 </editors>
 <views>
@@ -98,9 +89,7 @@
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" isWindowWorkingSet="false" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
-<customFilters userDefinedPatternsEnabled="false">
-<xmlDefinedFilters>
-<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<customFilters userDefinedPatternsEnabled="false">&#x0A;<xmlDefinedFilters>&#x0A;<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
 <child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
 <child filterId="org.eclipse.ajdt.javamodel.CompilationUnitFilter" isEnabled="true"/>
@@ -226,7 +215,7 @@
 </mainWindow>
 </layout>
 </perspective>
-<perspective editorAreaTrimState="1" editorAreaVisible="1" fixed="0" version="0.016">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jst.j2ee.internal.perspective.J2EEPerspective" id="org.eclipse.jst.j2ee.J2EEPerspective" label="Java EE"/>
 <alwaysOnActionSet id="ajcrosscutting"/>
 <alwaysOnActionSet id="org.eclipse.contribution.xref.ui.XRefActionSet"/>
@@ -279,34 +268,27 @@
 <perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
 <perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
 <perspective_action id="org.eclipse.ui.resourcePerspective"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="16384" id="topLeft" orientation="512" selectedTabId="org.eclipse.ui.navigator.ProjectExplorer" style="1">
-<fastViews>
-<view id="org.eclipse.ui.navigator.ProjectExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-<fastViewBar fastViewLocation="1024" id="bottomRight" orientation="256" selectedTabId="org.eclipse.jdt.ui.PackageExplorer" style="1">
-<fastViews>
-<view id="org.eclipse.ui.views.ProblemView" ratio="0.3"/>
-<view id="org.eclipse.ui.views.TaskList" ratio="0.3"/>
-<view id="org.eclipse.ui.views.PropertySheet" ratio="0.3"/>
-<view id="org.eclipse.wst.server.ui.ServersView" ratio="0.3"/>
-<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" ratio="0.3"/>
-<view id="org.eclipse.datatools.sqltools.result.resultView" ratio="0.3"/>
-<view id="org.eclipse.ui.console.ConsoleView" ratio="0.3"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer" ratio="0.3"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator"/>
+<view id="org.eclipse.datatools.sqltools.result.resultView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="topLeft">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.navigator.ProjectExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="Project Explorer"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackagesView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="topLeft">
@@ -316,22 +298,31 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.40685713" ratioLeft="356" ratioRight="519" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.20590405" ratioLeft="279" ratioRight="1076" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottomRight" ratio="0.75562704" ratioLeft="470" ratioRight="152" relationship="4" relative="org.eclipse.ui.editorss">
-<folder appearance="2" expanded="0">
-<page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
-<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
-<page content="org.eclipse.wst.server.ui.ServersView" label="LabelNotFound"/>
-<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="LabelNotFound"/>
-<page content="org.eclipse.datatools.sqltools.result.resultView" label="LabelNotFound"/>
-<page content="org.eclipse.ui.console.ConsoleView" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="org.eclipse.datatools.connectivity.DataSourceExplorerNavigator" label="Data Source Explorer"/>
+<page content="org.eclipse.datatools.sqltools.result.resultView" label="SQL Results"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.wst.common.snippets.internal.ui.SnippetsView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33"/>
+<presentation id="org.eclipse.ui.internal.presentations.r33.WorkbenchPresentationFactory_33">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="topRight" ratio="0.72422683" ratioLeft="843" ratioRight="321" relationship="2" relative="org.eclipse.ui.editorss">
@@ -347,165 +338,13 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/WeChatTest/WebContent/WEB-INF/web.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/TextMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/Image.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/resp/Article.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/ImageMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/Voice.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/VoiceMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/VideoMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/Video.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/MusicMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/Music.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/req/Music.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/resp/NewsMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/resp/VideoMessage.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/message/resp/Video.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/util/MessageUtil.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/service/CoreService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/WeChatTest/src/org/liufeng/course/util/SignUtil.java"/>
 </editors>
-<item historyLabel="Voice.java" index="5">
+<item historyLabel="CoreService.java" index="0">
 <position/>
 </item>
-<item historyLabel="VoiceMessage.java" index="6">
-<position/>
-</item>
-<item historyLabel="Image.java" index="2">
-<position info="not_deleted" x="102" y="0"/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="VoiceMessage.java" index="6">
-<position/>
-</item>
-<item historyLabel="Voice.java" index="5">
-<position/>
-</item>
-<item historyLabel="VoiceMessage.java" index="6">
-<position/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position/>
-</item>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position info="not_deleted" x="93" y="0"/>
-</item>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position info="not_deleted" x="93" y="0"/>
-</item>
-<item historyLabel="TextMessage.java" index="1">
-<position/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position info="not_deleted" x="88" y="0"/>
-</item>
-<item historyLabel="VoiceMessage.java" index="6">
-<position/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position info="not_deleted" x="88" y="0"/>
-</item>
-<item historyLabel="TextMessage.java" index="1">
-<position info="not_deleted" x="146" y="19"/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="TextMessage.java" index="1">
-<position info="not_deleted" x="146" y="19"/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="VoiceMessage.java" index="6">
-<position/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="VideoMessage.java" index="7">
-<position info="not_deleted" x="88" y="0"/>
-</item>
-<item historyLabel="ImageMessage.java" index="4">
-<position info="not_deleted" x="302" y="0"/>
-</item>
-<item historyLabel="Image.java" index="2">
-<position info="not_deleted" x="102" y="0"/>
-</item>
-<item historyLabel="web.xml" index="0"/>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="MusicMessage.java" index="9">
-<position/>
-</item>
-<item historyLabel="Music.java" index="10">
-<position/>
-</item>
-<item historyLabel="MusicMessage.java" index="9">
-<position info="not_deleted" x="226" y="0"/>
-</item>
-<item historyLabel="Music.java" index="11">
-<position/>
-</item>
-<item historyLabel="MusicMessage.java" index="9">
-<position info="not_deleted" x="226" y="0"/>
-</item>
-<item historyLabel="Music.java" index="11">
-<position info="not_deleted" x="673" y="0"/>
-</item>
-<item historyLabel="MusicMessage.java" index="9">
-<position info="not_deleted" x="226" y="0"/>
-</item>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="MusicMessage.java" index="9">
-<position info="not_deleted" x="226" y="0"/>
-</item>
-<item historyLabel="Video.java" index="8">
-<position/>
-</item>
-<item historyLabel="web.xml" index="0"/>
-<item historyLabel="Article.java" index="3">
-<position/>
-</item>
-<item historyLabel="NewsMessage.java" index="12">
-<position/>
-</item>
-<item historyLabel="Article.java" index="3">
-<position/>
-</item>
-<item historyLabel="web.xml" index="0"/>
-<item historyLabel="VideoMessage.java" index="13">
-<position/>
-</item>
-<item historyLabel="Video.java" index="14">
-<position/>
-</item>
-<item historyLabel="NewsMessage.java" index="12">
-<position/>
-</item>
-<item historyLabel="Article.java" index="3">
-<position/>
-</item>
-<item active="true" historyLabel="MessageUtil.java" index="15">
+<item active="true" historyLabel="SignUtil.java" index="1">
 <position/>
 </item>
 </navigationHistory>
@@ -514,9 +353,6 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="topLeft"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -524,13 +360,27 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottomRight"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SignUtil.java" tooltip="WeChatTest/src/org/liufeng/course/util/SignUtil.java">
+<persistable path="/WeChatTest/src/org/liufeng/course/util/SignUtil.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoreServlet.java" tooltip="WeChatTest/src/org/liufeng/course/servlet/CoreServlet.java">
+<persistable path="/WeChatTest/src/org/liufeng/course/servlet/CoreServlet.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/TextMessage.java">
+<persistable path="/WeChatTest/src/org/liufeng/course/message/req/TextMessage.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/TextMessage.java">
+<persistable path="/WeChatTest/src/org/liufeng/course/message/resp/TextMessage.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MessageUtil.java" tooltip="WeChatTest/src/org/liufeng/course/util/MessageUtil.java">
 <persistable path="/WeChatTest/src/org/liufeng/course/util/MessageUtil.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CoreService.java" tooltip="WeChatTest/src/org/liufeng/course/service/CoreService.java">
+<persistable path="/WeChatTest/src/org/liufeng/course/service/CoreService.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Video.java" tooltip="WeChatTest/src/org/liufeng/course/message/resp/Video.java">
 <persistable path="/WeChatTest/src/org/liufeng/course/message/resp/Video.java"/>
@@ -558,21 +408,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VoiceMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/VoiceMessage.java">
 <persistable path="/WeChatTest/src/org/liufeng/course/message/req/VoiceMessage.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/TextMessage.java">
-<persistable path="/WeChatTest/src/org/liufeng/course/message/req/TextMessage.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="VideoMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/VideoMessage.java">
-<persistable path="/WeChatTest/src/org/liufeng/course/message/req/VideoMessage.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Voice.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/Voice.java">
-<persistable path="/WeChatTest/src/org/liufeng/course/message/req/Voice.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageMessage.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/ImageMessage.java">
-<persistable path="/WeChatTest/src/org/liufeng/course/message/req/ImageMessage.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Image.java" tooltip="WeChatTest/src/org/liufeng/course/message/req/Image.java">
-<persistable path="/WeChatTest/src/org/liufeng/course/message/req/Image.java"/>
 </file>
 </mruList>
 </workbench>

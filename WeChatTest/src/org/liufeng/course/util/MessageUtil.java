@@ -11,16 +11,19 @@
     import org.dom4j.Document;  
     import org.dom4j.Element;  
     import org.dom4j.io.SAXReader;  
+    import org.liufeng.course.message.req.ImageMessage;
     import org.liufeng.course.message.resp.Article;  
     import org.liufeng.course.message.resp.MusicMessage;  
     import org.liufeng.course.message.resp.NewsMessage;  
     import org.liufeng.course.message.resp.TextMessage;  
+    import org.liufeng.course.message.resp.VideoMessage;
+    import org.liufeng.course.message.resp.VoiceMessage;
       
     import com.thoughtworks.xstream.XStream;  
     import com.thoughtworks.xstream.core.util.QuickWriter;  
     import com.thoughtworks.xstream.io.HierarchicalStreamWriter;  
     import com.thoughtworks.xstream.io.xml.PrettyPrintWriter;  
-    import com.thoughtworks.xstream.io.xml.XppDriver;  
+import com.thoughtworks.xstream.io.xml.XppDriver;  
       
     
     
@@ -121,9 +124,9 @@
          * @throws Exception 
          */  
         @SuppressWarnings("unchecked")  
-        public static Map<String, String> parseXml(HttpServletRequest request) throws Exception {  
+        public static HashMap<String, String> parseXml(HttpServletRequest request) throws Exception {  
             // 将解析结果存储在HashMap中  
-            Map<String, String> map = new HashMap<String, String>();  
+            HashMap<String, String> map = new HashMap<String, String>();  
       
             // 从request中取得输入流  
             InputStream inputStream = request.getInputStream();  
@@ -133,8 +136,10 @@
             // 得到xml根元素  
             Element root = document.getRootElement();  
             // 得到根元素的所有子节点  
+            
+            recursiveParseXML(root,map);
+/*            
             List<Element> elementList = root.elements();  
-      
             // 遍历所有子节点  
             for (Element e : elementList)  
                 map.put(e.getName(), e.getText());  
@@ -142,10 +147,25 @@
             // 释放资源  
             inputStream.close();  
             inputStream = null;  
-      
+   */   
             return map;  
         }  
-      
+        
+        private static void recursiveParseXML(Element root, HashMap<String, String>map){
+        	List<Element> elementList = root.elements();
+        	
+        	if(elementList.size() == 0) {
+//        		System.out.println(root.getName() + "=>" + root.getTextTrim());
+        		map.put(root.getName(), root.getText());
+        	} else {
+        		for(Element e : elementList) {
+        			recursiveParseXML(e,map);
+        		}
+        	}
+        }
+        
+        //利用xstream框架转xml
+        
         /** 
          * 文本消息对象转换成xml 
          *  
@@ -207,5 +227,39 @@
                     }  
                 };  
             }  
-        });  
+        }); 
+       
+       //响应消息转换xml 
+       public static String messageTOXML(TextMessage textMessage) {
+    	   xstream.alias("xml", TextMessage.class);
+    	   return xstream.toXML(textMessage);
+       } 
+       
+       public static String messageTOXML(ImageMessage imageMessage) {
+    	   xstream.alias("xml", ImageMessage.class);
+    	   return xstream.toXML(imageMessage);
+       } 
+       
+       public static String messageTOXML(MusicMessage musicMessage) {
+    	   xstream.alias("xml", MusicMessage.class);
+    	   return xstream.toXML(musicMessage);
+       } 
+       
+       public static String messageTOXML(NewsMessage newsMessage) {
+    	   xstream.alias("xml", NewsMessage.class);
+    	   xstream.alias("item", Article.class);	
+    	   return xstream.toXML(newsMessage);
+       } 
+       
+       public static String messageTOXML(VideoMessage videoMessage) {
+    	   xstream.alias("xml", VideoMessage.class);
+    	   return xstream.toXML(videoMessage);
+       } 
+       
+       public static String messageTOXML(VoiceMessage voiceMessage) {
+    	   xstream.alias("xml", VoiceMessage.class);
+    	   return xstream.toXML(voiceMessage);
+       } 
+       
+       
     }  
