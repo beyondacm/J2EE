@@ -131,7 +131,7 @@
                prefix="localhost_access_log." suffix=".txt" pattern="common" resolveHosts="false"/>
         -->
 
-      <Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBBS" path="/MyBBS" reloadable="true" source="org.eclipse.jst.jee.server:MyBBS"/><Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WeChatTest" path="/WeChatTest" reloadable="true" source="org.eclipse.jst.jee.server:WeChatTest"/></Host>
+      <Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBBS" path="/MyBBS" reloadable="true" source="org.eclipse.jst.jee.server:MyBBS"/><Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WeChatTest" path="/WeChatTest" reloadable="true" source="org.eclipse.jst.jee.server:WeChatTest"/><Context docBase="F:\GitHub\J2EE\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\WeChatTest01" path="/WeChatTest01" reloadable="true" source="org.eclipse.jst.jee.server:WeChatTest01"/></Host>
     </Engine>
   </Service>
 </Server>

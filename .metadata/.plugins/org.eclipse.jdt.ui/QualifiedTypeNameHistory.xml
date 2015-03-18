@@ -8,4 +8,8 @@
 <fullyQualifiedTypeName name="org.liufeng.course.message.resp.VoiceMessage"/>
 <fullyQualifiedTypeName name="org.liufeng.course.service.CoreService"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="org.liufeng.weixin.pojo.AccessToken"/>
+<fullyQualifiedTypeName name="java.awt.Menu"/>
+<fullyQualifiedTypeName name="org.liufeng.weixin.pojo.Menu"/>
+<fullyQualifiedTypeName name="net.sf.json.JSONException"/>
 </qualifiedTypeNameHistroy>

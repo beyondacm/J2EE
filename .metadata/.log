@@ -5907,3 +5907,1639 @@ java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+!SESSION 2015-03-18 13:01:51.601 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui.workbench 4 0 2015-03-18 13:03:50.841
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.navigator.ProjectExplorer while still in the middle of activating part org.eclipse.jdt.ui.CompilationUnitEditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.navigator.ProjectExplorer while still in the middle of activating part org.eclipse.jdt.ui.CompilationUnitEditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3352)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:943)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1273)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2366)
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2176)
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:4282)
+	at org.eclipse.swt.widgets.Tree.WM_SETFOCUS(Tree.java:6366)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3738)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:5370)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:963)
+	at org.eclipse.swt.widgets.Control.setSavedFocus(Control.java:2966)
+	at org.eclipse.swt.widgets.Decorations.restoreFocus(Decorations.java:803)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1595)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:1833)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3670)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DestroyWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.destroyWidget(Control.java:652)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:636)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:750)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:410)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:441)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:653)
+	at org.eclipse.jface.window.Window.close(Window.java:330)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:971)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Window.java:736)
+	at org.eclipse.jface.dialogs.MessageDialog.handleShellCloseEvent(MessageDialog.java:274)
+	at org.eclipse.jface.window.Window$3.shellClosed(Window.java:682)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:91)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:947)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:301)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1621)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3674)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2179)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2179)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2265)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3291)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.jface.dialogs.MessageDialog.openQuestion(MessageDialog.java:371)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4425)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4555)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4533)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:921)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:879)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:943)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1273)
+	at org.eclipse.swt.widgets.Shell.WM_MOUSEACTIVATE(Shell.java:2015)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3713)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(OS.java:2260)
+	at org.eclipse.swt.widgets.Scrollable.callWindowProc(Scrollable.java:77)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4364)
+	at org.eclipse.swt.internal.win32.OS.PeekMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.PeekMessage(OS.java:2769)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3288)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+!SESSION 2015-03-18 13:43:37.553 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-03-18 13:43:55.513
+!MESSAGE Version 1.7 of project facet jst.java does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 1.7 of project facet jst.java does not exist.
+	at org.eclipse.wst.common.project.facet.core.internal.util.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.common.project.facet.JavaFacetUtils.compilerLevelToFacet(JavaFacetUtils.java:297)
+	at org.eclipse.jst.common.project.facet.JavaFacetDefaultVersionProvider.getDefaultVersion(JavaFacetDefaultVersionProvider.java:32)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getDefaultVersion(ProjectFacet.java:131)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPanel$TableRowData.<init>(FacetsSelectionPanel.java:1764)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPanel.<init>(FacetsSelectionPanel.java:208)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPage.createControl(FacetsSelectionPage.java:152)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:170)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.createPageControls(ModifyFacetedProjectWizard.java:238)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.createPageControls(NewProjectDataModelFacetWizard.java:135)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1083)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1142)
+	at org.eclipse.jface.wizard.WizardDialog.access$2(WizardDialog.java:1139)
+	at org.eclipse.jface.wizard.WizardDialog$4.run(WizardDialog.java:1128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1126)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:820)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:369)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:616)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:227)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:116)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-03-18 13:43:56.013
+!MESSAGE Version 1.7 of project facet jst.java does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 1.7 of project facet jst.java does not exist.
+	at org.eclipse.wst.common.project.facet.core.internal.util.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.common.project.facet.JavaFacetUtils.compilerLevelToFacet(JavaFacetUtils.java:297)
+	at org.eclipse.jst.common.project.facet.JavaFacetDefaultVersionProvider.getDefaultVersion(JavaFacetDefaultVersionProvider.java:32)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getDefaultVersion(ProjectFacet.java:131)
+	at org.eclipse.wst.common.project.facet.core.internal.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:83)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:572)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.refreshAvailablePresets(ModifyFacetedProjectDataModel.java:209)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel$2.handleEvent(ModifyFacetedProjectDataModel.java:82)
+	at org.eclipse.wst.common.project.facet.ui.internal.AbstractDataModel.notifyListeners(AbstractDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.refreshAvailableFacets(ModifyFacetedProjectDataModel.java:181)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.access$0(ModifyFacetedProjectDataModel.java:129)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel$1.handleEvent(ModifyFacetedProjectDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.AbstractDataModel.notifyListeners(AbstractDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.setFixedFacets(ModifyFacetedProjectDataModel.java:110)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPanel.setFixedProjectFacets(FacetsSelectionPanel.java:840)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPage.createControl(FacetsSelectionPage.java:155)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:170)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.createPageControls(ModifyFacetedProjectWizard.java:238)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.createPageControls(NewProjectDataModelFacetWizard.java:135)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1083)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1142)
+	at org.eclipse.jface.wizard.WizardDialog.access$2(WizardDialog.java:1139)
+	at org.eclipse.jface.wizard.WizardDialog$4.run(WizardDialog.java:1128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1126)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:820)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:369)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:616)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:227)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:116)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-03-18 13:43:56.023
+!MESSAGE Version 1.7 of project facet jst.java does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 1.7 of project facet jst.java does not exist.
+	at org.eclipse.wst.common.project.facet.core.internal.util.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.common.project.facet.JavaFacetUtils.compilerLevelToFacet(JavaFacetUtils.java:297)
+	at org.eclipse.jst.common.project.facet.JavaFacetDefaultVersionProvider.getDefaultVersion(JavaFacetDefaultVersionProvider.java:32)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getDefaultVersion(ProjectFacet.java:131)
+	at org.eclipse.wst.common.project.facet.core.internal.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:83)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:572)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.refreshAvailablePresets(ModifyFacetedProjectDataModel.java:209)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel$2.handleEvent(ModifyFacetedProjectDataModel.java:82)
+	at org.eclipse.wst.common.project.facet.ui.internal.AbstractDataModel.notifyListeners(AbstractDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.setFixedFacets(ModifyFacetedProjectDataModel.java:110)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPanel.setFixedProjectFacets(FacetsSelectionPanel.java:840)
+	at org.eclipse.wst.common.project.facet.ui.internal.FacetsSelectionPage.createControl(FacetsSelectionPage.java:155)
+	at org.eclipse.jface.wizard.Wizard.createPageControls(Wizard.java:170)
+	at org.eclipse.wst.common.project.facet.ui.ModifyFacetedProjectWizard.createPageControls(ModifyFacetedProjectWizard.java:238)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.createPageControls(NewProjectDataModelFacetWizard.java:135)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1083)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1142)
+	at org.eclipse.jface.wizard.WizardDialog.access$2(WizardDialog.java:1139)
+	at org.eclipse.jface.wizard.WizardDialog$4.run(WizardDialog.java:1128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1126)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:820)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:369)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:616)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:227)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:116)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.common.project.facet.core 4 0 2015-03-18 13:43:56.133
+!MESSAGE Version 1.7 of project facet jst.java does not exist.
+!STACK 0
+java.lang.IllegalArgumentException: Version 1.7 of project facet jst.java does not exist.
+	at org.eclipse.wst.common.project.facet.core.internal.util.Versionable.getVersion(Versionable.java:80)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getVersion(ProjectFacet.java:1)
+	at org.eclipse.jst.common.project.facet.JavaFacetUtils.compilerLevelToFacet(JavaFacetUtils.java:297)
+	at org.eclipse.jst.common.project.facet.JavaFacetDefaultVersionProvider.getDefaultVersion(JavaFacetDefaultVersionProvider.java:32)
+	at org.eclipse.wst.common.project.facet.core.internal.ProjectFacet.getDefaultVersion(ProjectFacet.java:131)
+	at org.eclipse.wst.common.project.facet.core.internal.DefaultConfigurationPresetFactory.createPreset(DefaultConfigurationPresetFactory.java:83)
+	at org.eclipse.wst.common.project.facet.core.internal.PresetsExtensionPoint$DynamicPreset.resolve(PresetsExtensionPoint.java:572)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.refreshAvailablePresets(ModifyFacetedProjectDataModel.java:209)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel$2.handleEvent(ModifyFacetedProjectDataModel.java:82)
+	at org.eclipse.wst.common.project.facet.ui.internal.AbstractDataModel.notifyListeners(AbstractDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.refreshAvailableFacets(ModifyFacetedProjectDataModel.java:181)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel.access$0(ModifyFacetedProjectDataModel.java:129)
+	at org.eclipse.wst.common.project.facet.ui.internal.ModifyFacetedProjectDataModel$1.handleEvent(ModifyFacetedProjectDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.AbstractDataModel.notifyListeners(AbstractDataModel.java:69)
+	at org.eclipse.wst.common.project.facet.ui.internal.ChangeTargetedRuntimesDataModel.setTargetedRuntimes(ChangeTargetedRuntimesDataModel.java:174)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.setRuntimeAndDefaultFacets(NewProjectDataModelFacetWizard.java:271)
+	at org.eclipse.wst.web.ui.internal.wizards.NewProjectDataModelFacetWizard.createPageControls(NewProjectDataModelFacetWizard.java:145)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.setWizard(WizardDialog.java:1083)
+	at org.eclipse.jface.wizard.WizardDialog.updateForPage(WizardDialog.java:1142)
+	at org.eclipse.jface.wizard.WizardDialog.access$2(WizardDialog.java:1139)
+	at org.eclipse.jface.wizard.WizardDialog$4.run(WizardDialog.java:1128)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.wizard.WizardDialog.showPage(WizardDialog.java:1126)
+	at org.eclipse.jface.wizard.WizardDialog.nextPressed(WizardDialog.java:820)
+	at org.eclipse.jface.wizard.WizardDialog.buttonPressed(WizardDialog.java:369)
+	at org.eclipse.jface.dialogs.Dialog$2.widgetSelected(Dialog.java:616)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:227)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:116)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.bpel.validator 1 0 2015-03-18 13:44:07.083
+!MESSAGE Validator Startup 520ms
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:44:51.903
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:44:51 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:44:51.923
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:06.403
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:45:06 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:06.413
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:12.583
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:45:12 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:12.593
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:55.904
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:45:55 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:45:55.934
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:08.174
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:46:08 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:08.174
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:12.864
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:46:12 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:12.864
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:47.874
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:46:47 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:46:47.874
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:01.624
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:47:01 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:01.624
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:06.936
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:47:06 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:06.936
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:41.513
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:47:41 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:41.513
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:50.202
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:47:50 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:50.203
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:55.921
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:47:55 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:47:55.921
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:12.586
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:48:12 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:12.587
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:20.959
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:48:20 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:20.960
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:25.464
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:48:25 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:25.465
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:54.675
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:48:54 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:48:54.676
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:04.268
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:49:04 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:04.268
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:09.358
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:49:09 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:09.358
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:23.970
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:49:23 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:23.970
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:32.930
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:49:32 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:32.930
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:37.072
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:49:37 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:49:37.072
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:50:48.584
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:50:48 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:50:48.584
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:51:23.544
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:51:23 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:51:23.544
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:52:36.174
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:52:36 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:52:36.174
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:28.384
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:53:28 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:28.384
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:41.074
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:53:41 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:41.074
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:46.434
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 13:53:46 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 13:53:46.434
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:04:20.358
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:04:20 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:04:20.382
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:05:48.965
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:05:48 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:05:48.966
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:10:54.805
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:10:54 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:10:54.806
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:10:57.325
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:10:57 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:10:57.326
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:11:02.354
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:11:02 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:11:02.355
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:17:39.316
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:17:39 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:17:39.316
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:18:40.436
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:18:40 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:18:40.436
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:41:14.460
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:41:14 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:41:14.460
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:42:54.727
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:42:54 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:42:54.727
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:43:28.517
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:43:28 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:43:28.517
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:51:54.049
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:51:54 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:51:54.049
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:53:34.099
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:53:34 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:53:34.099
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:53:58.929
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:53:58 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:53:58.929
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:54:13.009
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:54:13 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:54:13.009
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:54:20.389
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 14:54:20 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 14:54:20.389
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:27:32.452
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:27:32 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:27:32.472
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.ui.ide 4 3 2015-03-18 16:27:49.052
+!MESSAGE Cannot complete operation because resources no longer exist.
+!SESSION 2015-03-18 16:27:57.612 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.bpel.validator 1 0 2015-03-18 16:30:06.512
+!MESSAGE Validator Startup 400ms
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:06.812
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:30:06 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:06.812
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:20.692
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:30:20 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:20.692
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:40.362
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:30:40 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:30:40.362
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:31:26.532
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:31:26 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:31:26.532
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:31:35.002
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:31:35 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:31:35.002
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:05.142
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:32:05 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:05.142
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-03-18 16:32:12.372
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Java Model Status [org.liufeng.course.message.req [in src [in WeChatTest01]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:485)
+	at org.eclipse.jdt.internal.core.PackageFragment.getUnderlyingResource(PackageFragment.java:361)
+	at org.eclipse.jdt.internal.core.Openable.getCorrespondingResource(Openable.java:290)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction$FilePaster.getAsContainer(PasteAction.java:920)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction$FilePaster.canPasteOn(PasteAction.java:889)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.PasteAction.run(PasteAction.java:222)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:268)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:244)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-03-18 16:32:12.372
+!MESSAGE org.liufeng.course.message.req [in src [in WeChatTest01]] does not exist
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:25.062
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:32:25 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:25.062
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:36.632
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:32:36 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:32:36.632
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-03-18 16:32:55.302 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.bpel.validator 1 0 2015-03-18 16:35:48.772
+!MESSAGE Validator Startup 230ms
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:35:48.992
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:35:48 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:35:48.992
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:35:57.392
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:35:57 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:35:57.392
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:36:33.942
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:36:33 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:36:33.942
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:40:12.205
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:40:12 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:40:12.205
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:41:45.915
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:41:45 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:41:45.915
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:42:58.705
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:42:58 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:42:58.705
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:43:02.455
+!MESSAGE 
+*** ERROR ***: Wed Mar 18 16:43:02 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-03-18 16:43:02.455
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-03-18 16:45:05.587
+!MESSAGE Error calling delegate restart() Tomcat v6.0 Server at localhost
+!SESSION 2015-03-18 17:25:37.610 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui.workbench 4 0 2015-03-18 17:41:04.689
+!MESSAGE WARNING: Blocked recursive attempt to close part org.eclipse.jdt.ui.CompilationUnitEditor while still in the middle of activating it
+!STACK 0
+java.lang.RuntimeException: WARNING: Blocked recursive attempt to close part org.eclipse.jdt.ui.CompilationUnitEditor while still in the middle of activating it
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1247)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1367)
+	at org.eclipse.ui.internal.EditorPane.doHide(EditorPane.java:61)
+	at org.eclipse.ui.internal.PartStack.close(PartStack.java:543)
+	at org.eclipse.ui.internal.EditorStack.close(EditorStack.java:206)
+	at org.eclipse.ui.internal.PartStack$1.close(PartStack.java:122)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:81)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:276)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder.access$1(DefaultTabFolder.java:1)
+	at org.eclipse.ui.internal.presentations.defaultpresentation.DefaultTabFolder$1.closeButtonPressed(DefaultTabFolder.java:67)
+	at org.eclipse.ui.internal.presentations.PaneFolder.notifyCloseListeners(PaneFolder.java:596)
+	at org.eclipse.ui.internal.presentations.PaneFolder$3.close(PaneFolder.java:189)
+	at org.eclipse.swt.custom.CTabFolder.onMouse(CTabFolder.java:2159)
+	at org.eclipse.swt.custom.CTabFolder$1.handleEvent(CTabFolder.java:320)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.jface.dialogs.MessageDialog.openQuestion(MessageDialog.java:371)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4425)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4555)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4533)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:921)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:879)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setFocus(PresentablePart.java:191)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:92)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:272)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.handleMouseDown(AbstractTabFolder.java:342)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder$3.mouseDown(AbstractTabFolder.java:79)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:178)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.ui.workbench 4 0 2015-03-18 17:41:06.609
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.ui.navigator.ProjectExplorer while still in the middle of activating part org.eclipse.jdt.ui.CompilationUnitEditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.ui.navigator.ProjectExplorer while still in the middle of activating part org.eclipse.jdt.ui.CompilationUnitEditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3352)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:229)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:943)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1273)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:2366)
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2176)
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:4282)
+	at org.eclipse.swt.widgets.Tree.WM_SETFOCUS(Tree.java:6366)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3738)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:5370)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:963)
+	at org.eclipse.swt.widgets.Control.setSavedFocus(Control.java:2966)
+	at org.eclipse.swt.widgets.Decorations.restoreFocus(Decorations.java:803)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1595)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:1833)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3670)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DestroyWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.destroyWidget(Control.java:652)
+	at org.eclipse.swt.widgets.Shell.destroyWidget(Shell.java:636)
+	at org.eclipse.swt.widgets.Widget.release(Widget.java:750)
+	at org.eclipse.swt.widgets.Widget.dispose(Widget.java:410)
+	at org.eclipse.swt.widgets.Decorations.dispose(Decorations.java:441)
+	at org.eclipse.swt.widgets.Shell.dispose(Shell.java:653)
+	at org.eclipse.jface.window.Window.close(Window.java:330)
+	at org.eclipse.jface.dialogs.Dialog.close(Dialog.java:971)
+	at org.eclipse.jface.window.Window.handleShellCloseEvent(Window.java:736)
+	at org.eclipse.jface.dialogs.MessageDialog.handleShellCloseEvent(MessageDialog.java:274)
+	at org.eclipse.jface.window.Window$3.shellClosed(Window.java:682)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:91)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:962)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:947)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:301)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1621)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3674)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2179)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProcW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(OS.java:2179)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:454)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3760)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:291)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1554)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1753)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4351)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2265)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3291)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:820)
+	at org.eclipse.jface.window.Window.open(Window.java:796)
+	at org.eclipse.jface.dialogs.MessageDialog.openQuestion(MessageDialog.java:371)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.handleEditorInputChanged(AbstractTextEditor.java:4425)
+	at org.eclipse.ui.texteditor.StatusTextEditor.handleEditorInputChanged(StatusTextEditor.java:220)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.sanityCheckState(AbstractTextEditor.java:4555)
+	at org.eclipse.ui.texteditor.StatusTextEditor.sanityCheckState(StatusTextEditor.java:210)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.safelySanityCheckState(AbstractTextEditor.java:4533)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.handleActivation(AbstractTextEditor.java:921)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$ActivationListener.partActivated(AbstractTextEditor.java:879)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WWinPartService.updateActivePart(WWinPartService.java:124)
+	at org.eclipse.ui.internal.WWinPartService.access$0(WWinPartService.java:115)
+	at org.eclipse.ui.internal.WWinPartService$1.partDeactivated(WWinPartService.java:48)
+	at org.eclipse.ui.internal.PartListenerList2$4.run(PartListenerList2.java:113)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:857)
+	at org.eclipse.ui.internal.PartListenerList2.fireEvent(PartListenerList2.java:53)
+	at org.eclipse.ui.internal.PartListenerList2.firePartDeactivated(PartListenerList2.java:111)
+	at org.eclipse.ui.internal.PartService.firePartDeactivated(PartService.java:116)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:165)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3402)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2946)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:265)
+	at org.eclipse.ui.internal.EditorPane.requestActivation(EditorPane.java:98)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setFocus(PresentablePart.java:191)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation$1.handleEvent(TabbedStackPresentation.java:92)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:267)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.fireEvent(AbstractTabFolder.java:272)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder.handleMouseDown(AbstractTabFolder.java:342)
+	at org.eclipse.ui.internal.presentations.util.AbstractTabFolder$3.mouseDown(AbstractTabFolder.java:79)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:178)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
