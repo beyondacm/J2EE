@@ -5,4 +5,5 @@
   [ERROR] 2015-03-18 19:10:46,148    org.liufeng.weixin.util.WeixinUtil     - 创建菜单失败 errcode:40017 errmsg:invalid button type
   [INFO ] 2015-03-18 19:10:46,148   org.liufeng.weixin.main.MenuManager     - 菜单创建失败，错误码：40017
   [INFO ] 2015-03-18 19:11:11,521   org.liufeng.weixin.main.MenuManager     - 菜单创建成功！
+  [INFO ] 2015-03-18 19:32:36,876   org.liufeng.weixin.main.MenuManager     - 菜单创建成功！
   

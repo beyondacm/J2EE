@@ -2,7 +2,7 @@
 <launchConfiguration type="org.eclipse.wst.server.ui.launchConfigurationType">
 <stringAttribute key="client-id" value="org.eclipse.wst.server.ui.web"/>
 <stringAttribute key="launchable-adapter-id" value="org.eclipse.jst.server.tomcat.web"/>
-<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:WeChatTest01///WEB-INF/classes/org/liufeng/weixin/main/MenuManager.java"/>
+<stringAttribute key="module-artifact" value="org.eclipse.jst.jee.server:WeChatTest03//"/>
 <stringAttribute key="module-artifact-class" value="org.eclipse.wst.server.core.util.WebResource"/>
 <stringAttribute key="server-id" value="14-11-16_下午1_390"/>
 </launchConfiguration>
