@@ -21,7 +21,7 @@ if(admin == null || !admin.equals("true")) {
 </script>
 
 <head>
-<title>E_Shopping管理平台¨</title>
+<title>E_Shopping Manage¨</title>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 </head>
 

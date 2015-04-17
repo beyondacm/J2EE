@@ -44,9 +44,11 @@ List<User> users = UserManager.getUsers();
 			<td><%= u.getPhone() %></td>
 			<td><%= u.getAddr() %></td>
 			<td><%= u.getRdate() %></td>
+
 			<td>
 				<a href= "userdelete.jsp?id=<%=u.getId()%>"  target="detail">ɾ</a>
 			</td>
+		
 		</tr>
 		
 		<%

@@ -20,7 +20,7 @@ public class UserManager {
 		ResultSet rs = null;
 		try {
 			conn = DB.getConn();
-			String sql = "select * from ruser";
+			String sql = "select * from ruser order by id desc";
 			rs = DB.executeQuery(conn, sql);
 			while(rs.next()) {
 				User u = new User();
@@ -55,4 +55,7 @@ public class UserManager {
 			DB.closeConn(conn);
 		}
 	}
+	
+	
+	
 }

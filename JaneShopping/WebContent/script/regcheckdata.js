@@ -1,33 +1,49 @@
 function checkdata() {
 	var ssn=form.username.value.toLowerCase();
 	if (!checkUserName(ssn)) return false;  //用户名检查
-	if( strlen(form.pwd.value)<6 || strlen(form.pwd.value)>16 ) {
+	if( strlen(form.password.value)<6 || strlen(form.password.value)>16 ) {
 		alert("\正确地登录密码长度为6-16位，仅可用英文、数字、特殊字符！")
-		form.pwd.focus()
+		form.password.focus()
 		return false;
 	}
-	if( strlen2(form.pwd.value) ) {
+	if( strlen2(form.password.value) ) {
 		alert("\您的密码中包含了非法字符，仅可用英文、数字、特殊字符！")
-		form.pwd.focus()
+		form.password.focus()
 		return false;
 	}
-	if( form.pwd.value == form.username.value ) {
+	if( form.password.value == form.username.value ) {
 		alert("\用户名和密码不能相同！")
-		form.pwd.focus()
+		form.password.focus()
 		return false;
 	}
-	if( form.pwd2.value =="" ) {
+	if( form.password2.value =="" ) {
 		alert("\请输入密码确认！")
-		form.pwd2.focus()
+		form.password2.focus()
 		return false;
 	}
-	if( form.pwd2.value != form.pwd.value ) {
+	if( form.password2.value != form.password.value ) {
 		alert("\两次密码输入不一致！")
-		form.pwd.focus()
+		form.password2.focus()
 		return false;
 	}
-	//检查性别
+	//检查电话
+	if( form.phone.value == "") {
+		alert("\请输入您的电话！")
+		form.phone.focus()
+		return false;
+	}
 	
+	
+	//检查送货地址
+	if( form.addr.value == "") {
+		alert("\请输入您的送货地址！")
+		form.phone.focus()
+		return false;
+	}
+	
+	return true;
+	//检查性别
+/*	
 	if( !(form.sex[0].checked || form.sex[1].checked) ) {
 		alert("请选择性别!");
 		form.sex[0].focus();
@@ -40,7 +56,7 @@ function checkdata() {
 		form.province.focus();
 		return false;
 	}
-	
+*/	
 	/*
 	if( form.question.value == "") {
 		alert("\请输入提示问题,当您忘记密码时可根据该问题提示密码！")
@@ -82,7 +98,7 @@ function checkdata() {
 		form.pingma.focus()
 		return false;
 	}*/
-	return true;
+	
 }
 
 function checkUserName(ssn){

@@ -117,8 +117,10 @@ if(action != null && action.equals("login")){
 <div class="container">
 
     <form class="form-signin" action="login.jsp" method="post">
+    	
     	<!-- 区分是提交的还是链接的 -->
     	<input type="hidden" name="action" value="login">
+        
         <!--<div class="container">-->
         <h3 class="form-signin-heading">
             Shopping administror

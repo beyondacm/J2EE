@@ -8,8 +8,9 @@ request.setCharacterEncoding("GB18030");
 String action = request.getParameter("action");
 if(action != null && action.trim().equals("register")) {
 	String username = request.getParameter("username");
-	//在服务器端进行检查
-	//TODO make sure username is valid
+	//在服务器端进行检查 防止用户在客户端把 js 代码删掉然后自己往服务器传错误参数
+	//TODO make sure username is valid 客户端怎么检查服务器端就怎么检查
+	
 	String password = request.getParameter("password");
 	String password2 = request.getParameter("password2");
 	//TODO make suer password = passwod2
@@ -18,11 +19,6 @@ if(action != null && action.trim().equals("register")) {
 	String addr = request.getParameter("addr");
 
 	User u = new User(username, password, phone, addr);
-//	u.setUsername(username);
-//	u.setPassword(password);
-//	u.setPhone(phone);
-//	u.setAddr(addr);
-//	u.setRdate(new Timestamp(System.currentTimeMillis()));
 	u.save();
 	out.println("Congratulations!Register OK!");
 	return;
