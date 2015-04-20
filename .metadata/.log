@@ -8000,3 +8000,499 @@ java.lang.NullPointerException
 	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
 	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2015-04-19 21:10:07.970 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_40
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.bpel.validator 1 0 2015-04-19 21:11:01.382
+!MESSAGE Validator Startup 5166ms
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-04-19 21:11:03.171
+!MESSAGE 
+*** ERROR ***: Sun Apr 19 21:11:03 CST 2015    java.lang.NullPointerException
+    	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+    	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+    	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.validation 4 0 2015-04-19 21:11:03.172
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.struts.config.TilesConfigValidator.validateInJob(TilesConfigValidator.java:64)
+	at org.eclipse.wst.validation.internal.operations.ValidatorJob.run(ValidatorJob.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 1 2015-04-19 21:11:36.613
+!MESSAGE Skipping builder 'org.eclipse.wst.jsdt.core.javascriptValidator' for project 'JaneShopping'. Either the builder is missing from the install, or it belongs to a project nature that is missing or disabled.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-04-19 21:11:38.332
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 75 2015-04-19 21:11:38.894
+!MESSAGE Errors during build.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:11:38.894
+!MESSAGE Errors running builder 'Faceted Project Validation Builder' on project 'JaneShopping'.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:11:38.894
+!MESSAGE Index: 3, Size: 3
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 4 2 2015-04-19 21:11:39.042
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 75 2015-04-19 21:11:39.045
+!MESSAGE Errors during build.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:11:39.045
+!MESSAGE Errors running builder 'Faceted Project Validation Builder' on project 'JaneShopping'.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:11:39.045
+!MESSAGE Index: 3, Size: 3
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:13:02.284
+!MESSAGE Error in launchable adapter
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.bpel.runtime.ode.launchable.ODELaunchable.toString(ODELaunchable.java:51)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuffer.append(Unknown Source)
+	at org.eclipse.wst.server.ui.internal.ServerUIPlugin.getLaunchableAdapter(ServerUIPlugin.java:847)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.updateClients(OptionalClientWizardFragment.java:62)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.getChildFragments(OptionalClientWizardFragment.java:94)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:313)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:317)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.getAllWizardFragments(TaskWizard.java:301)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addPages(TaskWizard.java:331)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.updatePages(TaskWizard.java:374)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage$1.run(TaskWizardPage.java:119)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:118)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4097)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.update(TaskWizardPage.java:116)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.createControl(TaskWizardPage.java:59)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.createPageControls(TaskWizard.java:396)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:543)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1081)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.getServer(RunOnServerActionDelegate.java:121)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:250)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:651)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:39)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:429)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.run(LaunchShortcutAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:13:25.438
+!MESSAGE Error starting server Tomcat v6.0 Server at localhost
+!STACK 1
+org.eclipse.core.runtime.CoreException: Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.setupLaunch(TomcatServerBehaviour.java:438)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatLaunchConfigurationDelegate.launch(TomcatLaunchConfigurationDelegate.java:92)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:766)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:608)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:601)
+	at org.eclipse.wst.server.core.internal.Server.start(Server.java:1265)
+	at org.eclipse.wst.server.core.internal.Server.synchronousStart(Server.java:1662)
+	at org.eclipse.wst.server.core.internal.StartServerJob.run(StartServerJob.java:34)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:13:25.439
+!MESSAGE Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:13:25.509
+!MESSAGE Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:13:33.957
+!MESSAGE Error in launchable adapter
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.bpel.runtime.ode.launchable.ODELaunchable.toString(ODELaunchable.java:51)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuffer.append(Unknown Source)
+	at org.eclipse.wst.server.ui.internal.ServerUIPlugin.getLaunchableAdapter(ServerUIPlugin.java:847)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.updateClients(OptionalClientWizardFragment.java:62)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.getChildFragments(OptionalClientWizardFragment.java:94)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:313)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:317)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.getAllWizardFragments(TaskWizard.java:301)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addPages(TaskWizard.java:331)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.updatePages(TaskWizard.java:374)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage$1.run(TaskWizardPage.java:119)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:118)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4097)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.update(TaskWizardPage.java:116)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.createControl(TaskWizardPage.java:59)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.createPageControls(TaskWizard.java:396)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:543)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1081)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.getServer(RunOnServerActionDelegate.java:121)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:250)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:651)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:39)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:429)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.run(LaunchShortcutAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:16:42.736
+!MESSAGE Error starting server Tomcat v6.0 Server at localhost
+!STACK 1
+org.eclipse.core.runtime.CoreException: Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.setupLaunch(TomcatServerBehaviour.java:438)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatLaunchConfigurationDelegate.launch(TomcatLaunchConfigurationDelegate.java:92)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:766)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:608)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:601)
+	at org.eclipse.wst.server.core.internal.Server.start(Server.java:1265)
+	at org.eclipse.wst.server.core.internal.Server.synchronousStart(Server.java:1662)
+	at org.eclipse.wst.server.core.internal.StartServerJob.run(StartServerJob.java:34)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:16:42.737
+!MESSAGE Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:16:42.738
+!MESSAGE Several ports (8005, 8009) required by Tomcat v6.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:17:15.065
+!MESSAGE Error starting server Tomcat v6.0 Server at localhost
+!STACK 1
+org.eclipse.core.runtime.CoreException: Port 8005 required by Tomcat v6.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.setupLaunch(TomcatServerBehaviour.java:426)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatLaunchConfigurationDelegate.launch(TomcatLaunchConfigurationDelegate.java:92)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:766)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:608)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:601)
+	at org.eclipse.wst.server.core.internal.Server.start(Server.java:1265)
+	at org.eclipse.wst.server.core.internal.Server.synchronousStart(Server.java:1662)
+	at org.eclipse.wst.server.core.internal.StartServerJob.run(StartServerJob.java:34)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:17:15.065
+!MESSAGE Port 8005 required by Tomcat v6.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:17:15.066
+!MESSAGE Port 8005 required by Tomcat v6.0 Server at localhost is already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).
+
+!ENTRY org.eclipse.core.resources 2 1 2015-04-19 21:17:37.610
+!MESSAGE Skipping builder 'org.eclipse.wst.jsdt.core.javascriptValidator' for project 'JaneShopping'. Either the builder is missing from the install, or it belongs to a project nature that is missing or disabled.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-04-19 21:17:37.622
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.core.resources 2 75 2015-04-19 21:17:37.629
+!MESSAGE Errors during build.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:17:37.629
+!MESSAGE Errors running builder 'Faceted Project Validation Builder' on project 'JaneShopping'.
+!SUBENTRY 1 org.eclipse.wst.common.project.facet.core 2 75 2015-04-19 21:17:37.629
+!MESSAGE Index: 3, Size: 3
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 3, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProject.validate(FacetedProject.java:997)
+	at org.eclipse.wst.common.project.facet.core.internal.FacetedProjectValidationBuilder.build(FacetedProjectValidationBuilder.java:91)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:624)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:166)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:197)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:246)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:249)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:334)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:137)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:17:44.648
+!MESSAGE Error in launchable adapter
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.bpel.runtime.ode.launchable.ODELaunchable.toString(ODELaunchable.java:51)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuffer.append(Unknown Source)
+	at org.eclipse.wst.server.ui.internal.ServerUIPlugin.getLaunchableAdapter(ServerUIPlugin.java:847)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.updateClients(OptionalClientWizardFragment.java:62)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.getChildFragments(OptionalClientWizardFragment.java:94)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:313)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:317)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.getAllWizardFragments(TaskWizard.java:301)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addPages(TaskWizard.java:331)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.updatePages(TaskWizard.java:374)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage$1.run(TaskWizardPage.java:119)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:118)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4097)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.update(TaskWizardPage.java:116)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.createControl(TaskWizardPage.java:59)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.createPageControls(TaskWizard.java:396)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:543)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1081)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.getServer(RunOnServerActionDelegate.java:121)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:250)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:651)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:39)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:429)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.run(LaunchShortcutAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:20:37.345
+!MESSAGE Error in launchable adapter
+!STACK 0
+java.lang.NullPointerException
+	at org.objectweb.lomboz.bpel.runtime.ode.launchable.ODELaunchable.toString(ODELaunchable.java:51)
+	at java.lang.String.valueOf(Unknown Source)
+	at java.lang.StringBuffer.append(Unknown Source)
+	at org.eclipse.wst.server.ui.internal.ServerUIPlugin.getLaunchableAdapter(ServerUIPlugin.java:847)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.updateClients(OptionalClientWizardFragment.java:62)
+	at org.eclipse.wst.server.ui.internal.wizard.fragment.OptionalClientWizardFragment.getChildFragments(OptionalClientWizardFragment.java:94)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:313)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addSubWizardFragments(TaskWizard.java:317)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.getAllWizardFragments(TaskWizard.java:301)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.addPages(TaskWizard.java:331)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.updatePages(TaskWizard.java:374)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage$1.run(TaskWizardPage.java:119)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:152)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:118)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4097)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.update(TaskWizardPage.java:116)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizardPage.createControl(TaskWizardPage.java:59)
+	at org.eclipse.wst.server.ui.internal.wizard.TaskWizard.createPageControls(TaskWizard.java:396)
+	at org.eclipse.jface.wizard.WizardDialog.createPageControls(WizardDialog.java:669)
+	at org.eclipse.jface.wizard.WizardDialog.createContents(WizardDialog.java:543)
+	at org.eclipse.jface.window.Window.create(Window.java:426)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1081)
+	at org.eclipse.jface.window.Window.open(Window.java:785)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.getServer(RunOnServerActionDelegate.java:121)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:250)
+	at org.eclipse.wst.server.ui.internal.actions.RunOnServerActionDelegate.run(RunOnServerActionDelegate.java:651)
+	at org.eclipse.wst.server.ui.internal.ServerLaunchShortcut.launch(ServerLaunchShortcut.java:39)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:429)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.run(LaunchShortcutAction.java:66)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:498)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:546)
+	at org.eclipse.jface.action.ActionContributionItem.access$2(ActionContributionItem.java:490)
+	at org.eclipse.jface.action.ActionContributionItem$5.handleEvent(ActionContributionItem.java:402)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:938)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3682)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3293)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2389)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2353)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2219)
+	at org.eclipse.ui.internal.Workbench$4.run(Workbench.java:466)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:289)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:461)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:106)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:169)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:106)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:76)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:363)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:176)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:508)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:447)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1173)
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:21:12.817
+!MESSAGE Error calling delegate restart() Tomcat v6.0 Server at localhost
+
+!ENTRY org.eclipse.wst.server.core 4 0 2015-04-19 21:21:15.293
+!MESSAGE Error starting server Tomcat v6.0 Server at localhost
+!STACK 1
+org.eclipse.core.runtime.CoreException: The Tomcat server configuration at \Servers\Tomcat v6.0 Server at localhost-config is missing. Check the server for errors.
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServer.getTomcatConfiguration(TomcatServer.java:81)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.getTomcatConfiguration(TomcatServerBehaviour.java:78)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatServerBehaviour.setupLaunch(TomcatServerBehaviour.java:411)
+	at org.eclipse.jst.server.tomcat.core.internal.TomcatLaunchConfigurationDelegate.launch(TomcatLaunchConfigurationDelegate.java:92)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:766)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:608)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:601)
+	at org.eclipse.wst.server.core.internal.Server.start(Server.java:1265)
+	at org.eclipse.wst.server.core.internal.Server.start(Server.java:1528)
+	at org.eclipse.wst.server.core.internal.Server$16.run(Server.java:1776)
+!SUBENTRY 1 org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:21:15.294
+!MESSAGE The Tomcat server configuration at \Servers\Tomcat v6.0 Server at localhost-config is missing. Check the server for errors.
+
+!ENTRY org.eclipse.jst.server.tomcat.core 4 0 2015-04-19 21:21:15.370
+!MESSAGE The Tomcat server configuration at \Servers\Tomcat v6.0 Server at localhost-config is missing. Check the server for errors.

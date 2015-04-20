@@ -21,8 +21,8 @@ if(admin == null || !admin.equals("true")) {
 </script>
 
 <head>
-<title>E_Shopping Manage¨</title>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>E_Shopping Manage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=GB18030">
 </head>
 
 <frameset rows="29,*" frameborder="0" border="0" framespacing="0" cols="*">

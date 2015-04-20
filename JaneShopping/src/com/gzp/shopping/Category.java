@@ -1,5 +1,8 @@
 package com.gzp.shopping;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Category {
 	int id;
 	String name;
@@ -44,6 +47,43 @@ public class Category {
 		this.grade = grade;
 	}
 	
+	public static void add(Category c) {
+		CategoryDAO.save(c);
+	}
 	
+	public void addChild(Category c) {
+		Category.addChildCategory(id, c.getName(), c.getDescr());
+	}
+	
+	public static void addTopCategory(String name, String descr) {
+		
+		addChildCategory(0, name, descr);
+		/*
+		Category c = new Category();
+		c.setId(-1);
+		c.setName(name);
+		c.setDescr(descr);
+		c.setPid(0);
+		c.setGrade(1);
+		*/
+		//CategoryDAO.save(c);
+		//add(c);
+		
+	}
+	
+	public static List<Category> getCategories() {
+		List<Category> list = new ArrayList<Category>();
+		CategoryDAO.getCategories(list, 0);
+		return list;
+	}
+	
+	public static void addChildCategory(int pid, String name, String descr) {
+		CategoryDAO.addChildCategory(pid, name, descr);
+	}
+	
+	
+	public static Category loadById(int id) {
+		return CategoryDAO.loadById(id);
+	}
 	
 }

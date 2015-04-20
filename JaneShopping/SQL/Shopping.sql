@@ -30,7 +30,7 @@ create table product
 	name varchar(255),
 	descr varchar(255),
 	normalprice double,
-	menberprice double,
+	memberprice double,
 	pdate datetime,
 	categoryid int references category(id)
 );

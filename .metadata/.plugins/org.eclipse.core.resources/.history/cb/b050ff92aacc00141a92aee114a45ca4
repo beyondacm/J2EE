@@ -1,6 +1,0 @@
-package org.liufeng.course.message.req;
-
-public class Voice {
-	private String MediaId;
-	
-}

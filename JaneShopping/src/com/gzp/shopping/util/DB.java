@@ -108,4 +108,14 @@ public class DB {
 		return rs;
 	}
 	
+	public static void executeUpdate(Statement stmt, String sql) {
+		try {
+			if(stmt != null) {
+				stmt.executeUpdate(sql);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 }

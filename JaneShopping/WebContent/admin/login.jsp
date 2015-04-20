@@ -28,7 +28,7 @@ if(action != null && action.equals("login")){
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <meta charset="gbk">
+    <meta charset="GB18030">
     <title>SHOPPING LOGIN</title>
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
 </head>
