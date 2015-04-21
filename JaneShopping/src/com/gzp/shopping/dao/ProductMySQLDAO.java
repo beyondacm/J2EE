@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -103,21 +104,53 @@ public class ProductMySQLDAO implements ProductDAO{
 			String sql = "select * from product where 1=1";
 			
 			String strId = "";
+			//(2,3,4)
 			if(categoryId != null && categoryId.length > 0) {
-				strId = "(";
+				strId += "(";
 				for(int i=0; i<categoryId.length ; i++) {
 					if(i < categoryId.length -1) {
-						strId = categoryId[i] + ",";
+						strId += categoryId[i] + ",";
+					}else {
+						strId += categoryId[i] ;
 					} 	
 				}
 				strId += ")";
-				sql = " and categoryid in " + strId;
+				sql += " and categoryid in " + strId;
 			}
 			
 			if(keyWord != null && !keyWord.trim().equals("")) {
 				sql += " and name like '%" +keyWord +"%' or descr like '%" +keyWord + "%'" ;
 			}
  			
+			if(lowNormalPrice >= 0) {
+				sql += " and normalprice >" + lowNormalPrice;
+			}
+			
+			if(highNormalPrice > 0) {
+				sql += " and normalprice <" + highNormalPrice;
+			}
+			
+			if(lowMemberPrice >= 0) {
+				sql += " and normalprice >" + lowMemberPrice;
+			}
+			
+			if(highMemberPrice > 0) {
+				sql += " and normalprice <" + highMemberPrice;
+			}
+			
+			if(startDate != null) {
+				sql += " and pdate > '"+ new SimpleDateFormat("yyyy-MM-dd").format(startDate) + "'";
+			}
+			
+			if(endDate != null) {
+				sql += " and pdate > '"+ new SimpleDateFormat("yyyy-MM-dd").format(endDate) + "'";
+			}
+			System.out.println(PageNo);
+			
+			sql += " limit " + (PageNo-1)*PageSize + "," + PageSize;
+			
+System.out.println(sql);
+
 			rs = DB.executeQuery(conn, sql);
 			while(rs.next()) {
 				Product p = new Product();
